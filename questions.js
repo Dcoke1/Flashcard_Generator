@@ -1,0 +1,6 @@
+exports.categor = [
+{
+	name: ""
+
+}
+];
