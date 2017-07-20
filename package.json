@@ -1,0 +1,23 @@
+{
+  "name": "flashcard_generator",
+  "version": "1.0.0",
+  "description": "Backend Hw Constructors",
+  "main": "BasicCard.js",
+  "dependencies": {
+    "inquirer": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dcoke1/Flashcard-Generator.git"
+  },
+  "author": "Douglas J. Coke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dcoke1/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/Dcoke1/Flashcard-Generator#readme"
+}
