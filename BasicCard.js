@@ -5,7 +5,7 @@ var flash_card = require("./ClozeCard.js");
 var quiz = require("./questions.js");
 
 var categories = [];
-var facts = questions.categor
+var facts = quiz.categor
 var Q = [];
 var count = 0;
 var correct = 0;
@@ -14,7 +14,7 @@ var correct = 0;
 for (var i = 0; i < facts.length; i++) {
 	categories.push(facts[i].name);
 
-	 console.log(facts[i]);
+	 // console.log(facts[i]);
 }
 
 console.log("*********************************************************");
@@ -80,13 +80,13 @@ function trivia () {
 			console.log("\nCorrect!\n" + Q[count].fullText);
 			correct++
 		} 
-		else console.log("\nIncorrect\n" + Q[count].fullText);
+		else console.log("\nIncorrect!\n" + Q[count].fullText);
 		count++ 
 		
 		trivia();			
 		});
 	}
-	else {
+		else {
 		console.log("\nResults\n----------------\nYou Answered " + correct + " correct.\n");
 		//Ask to restart game 
 		restart();
