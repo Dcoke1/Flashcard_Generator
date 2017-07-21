@@ -32,7 +32,7 @@ function Game () {
 			var loc;
 
 			for (var i = 0; i < facts.length; i++) if (facts[i].name === response.categor) loc = i;
-			for (var i = 0; i < 5; i++) Q[i] = new flash_card(facts[loc][i].A, facts[loc][i].A);
+			for (var i = 0; i < 5; i++) Q[i] = new flash_card(facts[loc][i].Q, facts[loc][i].A);
 
 			trivia();
 		});
