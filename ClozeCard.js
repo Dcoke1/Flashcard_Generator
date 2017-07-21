@@ -18,6 +18,5 @@ function ClozeCard(text, cloze) {
 			this.partial = this.partial + " " + array[i];
 		}
 		
-		if (!this.clozeCheck) console.log("The cloze was not in the text! ")
 	};
 }

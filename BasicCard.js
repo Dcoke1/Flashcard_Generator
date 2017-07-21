@@ -5,7 +5,7 @@ var flash_card = require("./ClozeCard.js");
 var quiz = require("./questions.js");
 
 var categories = [];
-var facts = quiz.categor
+var facts = quiz.game
 var Q = [];
 var count = 0;
 var correct = 0;
@@ -20,18 +20,18 @@ for (var i = 0; i < facts.length; i++) {
 console.log("*********************************************************");
 
 //inquirer function for choosing a category
-function Game () {
+function game () {
 	inquirer.prompt([
 	{
 		type: "list",
 		message: "** Choose a Topic for your quiz =] **",
 		choices: categories,
-		name: "Game"
+		name: "game"
 	},
 		]).then(function(response) {
 			var loc;
 
-			for (var i = 0; i < facts.length; i++) if (facts[i].name === response.categor) loc = i;
+			for (var i = 0; i < facts.length; i++) if (facts[i].name === response.game) loc = i;
 			for (var i = 0; i < 5; i++) Q[i] = new flash_card(facts[loc][i].Q, facts[loc][i].A);
 
 			trivia();
@@ -51,7 +51,7 @@ function restart () {
 
 		]).then(function(response) {
 			if(response.restart){
-				count = 0; correct = 0; Game();
+				count = 0; correct = 0; game();
 			}
 		});
 }
@@ -94,7 +94,7 @@ function trivia () {
 }
 
 //Run App
-Game();
+game();
 
 
 
